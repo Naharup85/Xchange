@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Xchange</h1>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./dashboard/dasboard.html">Markets</a></li>
+                    <li><a href="./trade/trade.html">Trade</a></li>
+                    <li><a href="./wallet/wallet.html">Wallet</a></li>
+                    <li><a href="./setting/setting.html">Settings</a></li>
+                    <li><a href="./support/support.html">Help/FAQ</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="hero-text">Trade Smarter, Not Harder</h2>
+            <p>Join the future of cryptocurrency trading with our intuitive platform.</p>
+            <a href="./trade/trade.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Advanced Trading Tools</h3>
+                <p>Access sophisticated charts and analysis tools to make informed decisions.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Transactions</h3>
+                <p>Ensure the safety of your assets with our state-of-the-art security measures.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Get assistance anytime with our dedicated support team available round the clock.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="live-charts">
+        <div class="container">
+            <h2>Live Cryptocurrency Charts</h2>
+            <div class="chart-container">
+                <canvas id="bitcoinChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="ethereumChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Crypto Exchange. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>

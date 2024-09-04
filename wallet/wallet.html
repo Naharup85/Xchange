@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange - Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wallet</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../dashboard/dasboard.html">Markets</a></li>
+                    <li><a href="../trade/trade.html">Trade</a></li>
+                    <li><a href="#">Wallet</a></li>
+                    <li><a href="../support/support.html">Support</a></li>
+                    <li><a href="../setting/setting.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="wallet">
+        <div class="container">
+            <div class="deposit-withdraw">
+                <h2>Deposit/Withdrawal</h2>
+                <form id="wallet-form">
+                    <label for="wallet-action">Select Action:</label>
+                    <select id="wallet-action">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+
+                    <label for="wallet-crypto">Select Cryptocurrency:</label>
+                    <select id="wallet-crypto">
+                        <option value="BTC">Bitcoin (BTC)</option>
+                        <option value="ETH">Ethereum (ETH)</option>
+                        <option value="LTC">Litecoin (LTC)</option>
+                    </select>
+
+                    <label for="wallet-amount">Amount:</label>
+                    <input type="number" id="wallet-amount" min="0" step="0.0001" placeholder="Amount" required>
+
+                    <div class="wallet-buttons">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="transaction-history">
+                <h2>Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Cryptocurrency</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transaction-list">
+                        <!-- Transaction history will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

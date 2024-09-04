@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.settings {
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.settings .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.settings h2, .settings h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-profile, .security-settings {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+.profile-buttons, .security-buttons, .twofa-buttons {
+    margin-top: 20px;
+}
+
+.profile-buttons button, .security-buttons button, .twofa-buttons button {
+    width: 100%;
+    padding: 10px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-buttons button:hover, .security-buttons button:hover, .twofa-buttons button:hover {
+    background: #e67e22;
+}

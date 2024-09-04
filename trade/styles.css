@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.trading {
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+.trading .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.trading h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-book, .trading-chart, .order-entry {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-book-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.order-book-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-book-list th, .order-book-list td {
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-book-list th {
+    background: #f9f9f9;
+}
+
+.order-entry form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-entry form label {
+    margin: 10px 0 5px;
+}
+
+.order-buttons {
+    margin-top: 20px;
+}
+
+.order-buttons button {
+    width: 100%;
+    padding: 10px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-buttons button:hover {
+    background: #e67e22;
+}
